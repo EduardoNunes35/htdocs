@@ -1,0 +1,280 @@
+div#listagem_filter.dataTables_filter {
+    float: left;
+    padding-bottom: 10px;
+}
+
+div#listagem_filter.dataTables_filter {
+    float: left;
+    padding-bottom: 10px;
+}
+
+div#listagem_info.datatables_info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 11px;
+    border-radius: 5px;
+}
+
+.dataTables_filter input {
+        height: 28px;
+        padding: 4px 8px;
+        font-size: 12px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        background-color: #f9fafb;
+        transition: all 0.2s;
+    }
+
+    .dataTables_filter input:focus {
+        border-color: #3b82f6;
+        outline: none;
+        background-color: #fff;
+    }
+
+    .dataTables_info {
+        font-size: 10px;
+        color: #6b7280;
+    }
+
+    .dataTables_paginate {
+        margin-top: 10px;
+    }
+
+    .dataTables_paginate .paginate_button {
+        display: none;
+        border: 1px solid #d1d5db;
+        color: #374151;
+        padding: 4px 10px;
+        margin: 0 2px;
+        font-size: 11px;
+        border-radius: 6px;
+        background-color: #f3f4f6;
+        cursor: pointer;
+    }
+
+    .dataTables_paginate .paginate_button:hover {
+        background-color: #e5e7eb;
+    }
+
+    .dataTables_paginate .paginate_button.current {
+        background-color: #3b82f6;
+        color: white !important;
+        border-color: #3b82f6;
+        font-weight: bold;
+    }
+
+    .dataTables_paginate .paginate_button.previous,
+    .dataTables_paginate .paginate_button.next,
+    .dataTables_paginate .paginate_button.first,
+    .dataTables_paginate .paginate_button.last,
+    .dataTables_paginate .paginate_button.current,
+    .dataTables_paginate .paginate_button:not(.previous):not(.next):not(.first):not(.last):not(.current):nth-child(-n+8) {
+        display: inline-block;
+    }
+
+.disabled {
+    color: rgb(60, 63, 66);
+}
+
+li#listagem_first.paginate_button.page-item.first.disabled {
+    border: 1px solid rgb(70, 80, 63) !important;
+    background-image: linear-gradient(to top, white, #8e8f76);
+}
+
+li#listagem_previous.paginate_button.page-item.previous.disabled {
+    border: 1px solid rgb(70, 80, 63) !important;
+    background-image: linear-gradient(to top, white, #8e8f76);
+}
+
+li#listagem_next.paginate_button.page-item.next.disabled {
+    border: 1px solid rgb(70, 80, 63) !important;
+    background-image: linear-gradient(to top, white, #8e8f76);
+}
+
+li#listagem_last.paginate_button.page-item.last.disabled {
+    border: 1px solid rgb(70, 80, 63) !important;
+    background-image: linear-gradient(to top, white, #8e8f76);
+}
+
+li#listagem_first.paginate_button.page-item.first {
+    border: 1px solid rgb(70, 80, 63) !important;
+    background-image: linear-gradient(to top, #14461f, #258d3b);
+}
+
+li#listagem_previous.paginate_button.page-item.previous {
+    border: 1px solid rgb(70, 80, 63) !important;
+    background-image: linear-gradient(to top, #14461f, #258d3b);
+}
+
+li#listagem_next.paginate_button.page-item.next {
+    border: 1px solid rgb(70, 80, 63) !important;
+    background-image: linear-gradient(to top, #14461f, #258d3b);
+}
+
+li#listagem_last.paginate_button.page-item.last {
+    border: 1px solid rgb(70, 80, 63) !important;
+    background-image: linear-gradient(to top, #14461f, #258d3b);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 6px 10px !important;
+    padding-bottom: 10px !important;
+    margin: 2px;
+    min-width: 40px;
+    min-height: 35px;
+    font-size: 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+.page-item.active {
+    background-color: #daf3b2;
+    padding-left: 2px;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 2px solid rgba(128, 0, 11, 0.233);
+    border-bottom: 2px solid rgba(128, 0, 11, 0.233);
+    border-top: 2px solid rgba(128, 0, 11, 0.233);
+    border-radius: 3px;
+    color: rgb(50, 52, 54);
+}
+
+.page-item {
+    background-color: #9e9ea7;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px;
+    border-radius: 3px;
+}
+
+.centraliza {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    /*align-items: center;*/
+    /* Centraliza verticalmente */
+    /*width: 100vw;*/
+    height: 100vh;
+    /*padding-right: 5px;*/
+    margin: 0 10%;
+}
+/* Aumenta o espaçamento entre as linhas da tabela */
+#listagem tr {
+    line-height: 2.2em; /* ou outro valor como 2.5em, 3em etc. */
+}
+
+/* Opcional: pode aumentar também a altura das células */
+#listagem td, #listagem th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 360px) {
+    li {
+        width: 4%;
+        border-radius: 2px;
+        font-size: 6px;
+        display: inline-block;
+        padding: 2px;
+    }
+
+    .page-item {
+        background-color: #9e9ea7;
+        display: inline-flex;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: 1px;
+        border-radius: 2px;
+    }
+
+    div#listagem_filter.dataTables_filter {
+        float: left;
+        padding-bottom: 10px;
+    }
+
+    .esconde360 {
+        display: none;
+    }
+
+    .centraliza {
+        display: flex;
+        justify-content: left;
+        margin-left: 1px;
+        padding-right: 1px;
+    }
+    #listagem .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 6px 6px !important;
+    margin: 2px;
+    min-width: 10px;
+    min-height: 10px;
+    font-size: 9px;
+    border-radius: 3px;
+    white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .esconde470 {
+        display: none;
+    }
+
+    .centraliza {
+        display: flex;
+        justify-content: left;
+        margin-left: 1px;
+        padding-right: 1px;
+    }
+
+    div#listagem_filter.dataTables_filter {
+        float: left;
+        padding-bottom: 10px;
+    }
+}
+
+/* Para telas com largura máxima de 768px (tablets e celulares em paisagem) */
+
+@media screen and (max-width: 768px) {
+    #listagem th.hide-on-small,
+    #listagem td.hide-on-small {
+        display: none !important; /* O !important pode ser necessário para sobrescrever estilos do DataTables ou inline */
+    }
+}
+
+/* Para telas com largura máxima de 300px (celulares em retrato) */
+@media screen and (max-width: 300px) {
+    #listagem th.hide-on-very-small, /* Se você definir essa classe no HTML */
+    #listagem td.hide-on-very-small {
+        display: none !important;
+    }
+    /* Exemplo adicional: se quiser ocultar a coluna "Processo" em telas muito pequenas */
+    /* Você precisaria adicionar a classe 'hide-on-very-small' ao th/td da coluna "Processo"
+     Cuidado com nth-child se a ordem das colunas visíveis mudar*/
+    /** */
+    #listagem th:nth-child(2),
+    #listagem td:nth-child(2) {
+         display: none !important;
+    }
+    td.nome {
+        max-width: 250px;
+        white-space: nowrap; /* Evita quebra de linha */
+        overflow: hidden;      /* Esconde o texto que ultrapassa */
+        text-overflow: ellipsis; /* Adiciona "..." no final */
+    }
+    td.nome a {
+        display: block; /* Garante que a âncora ocupe a largura total da célula para o truncamento */
+        max-width: 250px; /* Defina uma largura máxima para o link dentro da célula */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #listagem .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 6px 6px !important;
+    margin: 2px;
+    min-width: 10px;
+    min-height: 10px;
+    font-size: 9px;
+    border-radius: 3px;
+    white-space: nowrap;
+    }
+}

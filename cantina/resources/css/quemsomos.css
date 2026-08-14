@@ -1,0 +1,83 @@
+.reg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+f-cor1 {
+    color: #062452;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+f-cor2 {
+    color: #80052a;
+}
+
+article {
+    padding: 20px 30px 0;
+    font-size: 15px;
+    max-height: 145px;
+    overflow: hidden;
+    transition: max-height 1s;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+article.open {
+    max-height: 1000px;
+}
+
+button {
+    background  : #0e0b22;
+    color       : #fff;
+    padding     : 0.6rem;
+    margin-top  : 20px;
+    border      : none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background  : #FDF0D5;
+    color       : #0e0b22;
+    cursor      : pointer;
+}
+
+b1 {
+    background  : #272249;
+    color       : #fff;
+    padding     : 0.6rem;
+    margin-top  : 20px;
+    border      : none;
+    border-radius: 4px;
+}
+b1:hover {
+    background  : #FDF0D5;
+    color       : #0e0b22;
+    cursor      : pointer;
+}
+b2 {
+    background  : #f5f7db;
+    color       : #57498b;
+    padding     : 0.6rem;
+    margin-top  : 20px;
+    border      : none;
+    border-radius: 4px;
+}
+
+b2:hover {
+    background  : #FDF0D5;
+    color       : #0e0b22;
+    cursor      : pointer;
+}
+b3 {
+    background  : #272249;
+    color       : #fff;
+    padding     : 0.6rem;
+    margin-top  : 20px;
+    border      : none;
+    border-radius: 4px;
+}
+b3:hover {
+    background  : #FDF0D5;
+    color       : #0e0b22;
+    cursor      : pointer;
+}

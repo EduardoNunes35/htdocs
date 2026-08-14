@@ -1,0 +1,186 @@
+.sombra {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+.clearfix:after {
+    content: '.';
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* Abas */
+.tabs-content {
+    background-image: linear-gradient(to top, #d3d612, white, );
+    border-radius: 10px;
+    margin : 0 auto;
+    width : 80%;
+    padding-right: 5px;
+    padding-left : 5px;
+    padding-bottom: 10px;
+}
+
+/* Menu das abas */
+.tabs-menu {
+    background: #9da755;
+    border-radius: 6px 6px 0px 0px;
+    padding-left: 0px;
+}
+
+.tabs-menu ul {
+    list-style: none;
+}
+
+.tabs-menu ul li {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabs-menu ul li a {
+    background: #9da755;
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 8px 8px 0px 0px;
+    letter-spacing: 0.2em;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10%;
+}
+
+.tabs-menu ul li a.active-tab-menu {
+    background-image: linear-gradient(to bottom, #9da755, white);
+    color: #8a8d9f;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 8px 8px 0px 0px;
+    letter-spacing: 0.2em;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10%;
+}
+
+/* ----------------------Conteúdo das abas ------------------------------*/
+.fixo {
+    padding-left: 10px;
+}
+
+.tabs {
+    width: 100%;
+}
+
+.tab-ativa {
+    display: inline-block;
+}
+
+.rotulo {
+    font-size: 10px;
+    color: #423c3c;
+    width: 50%;
+}
+.campo {
+    color: #423c3c;
+    width: 95%;
+}
+.campo1 {
+    color: #423c3c;
+    width: 47%;
+}
+.campo2 {
+    color: #423c3c;
+    width: 75%;
+}
+.campo3 {
+    color: #423c3c;
+    width: 20%;
+}
+.side-a, .side-b  {
+    width: 50%;
+    padding: 10px;
+}
+.side-a {
+    float: left;
+}
+.side-b {
+    float: right;
+}
+.topo {
+    position: relative;
+    padding-top: 10px;
+}
+
+input, textarea, select {
+    outline: 0;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 360px) {
+    .side-a, .side-b {
+        width: 100%;
+        float: none;
+        padding-left : 5%;
+        padding-right: 5%;
+    }
+    input {
+        text-align: center;
+        margin-bottom: 5px;
+        margin: 0 auto; /* Adição de margem automática */
+    }
+    .tabs-menu ul li a {
+        font-size: 10px;
+        display:inline-block;
+    }
+
+    .tabs-menu ul li a.active-tab-menu {
+        font-size: 11px;
+        display:inline-block;
+    }
+    ul li {
+        width: 50%;
+        padding-left:10px;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .side-a, .side-b {
+        width: 100%; /* Ocupa a largura disponível */
+        float: none; /* Não flutua mais */
+        padding-left : 10%;
+        padding-right: 10%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    input[id="estados"]
+    input[id="municipios"]
+    input[id="cpfcnpj"]
+    input[id="rgie"]
+    input[id="email"]
+    input[id="endereco"]
+    input[id="logradouro"]
+    input[id="bairro"]
+    input[id="last_used_at"]
+    input[id="complemento"]{
+        width: 95%;
+    }
+
+    input[id="nome"]{
+        width: 100%;
+    }
+}

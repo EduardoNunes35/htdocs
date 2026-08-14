@@ -1,0 +1,67 @@
+p   {
+    font-family :    Arial;
+}
+lb   {
+    color       : #423c3c;
+}
+.formato1 {
+    padding-left:    100px;
+}
+._lado  {
+    display     : inline-block;
+    width       :         auto;
+    float       :         auto;
+}
+.f-siga1 {
+    font-size   :   28px;
+    padding-top:    50px;
+}
+.f-cabeca1 {
+    padding-top :   30px;
+    color       : rgb(1, 1, 70);
+}
+.f-entidade {
+    padding-top :      8px;
+}
+.f-italico {
+    font-style: italic;
+}
+.f-negrito {
+    font-weight: bold;
+    color       : #423c3c ;
+}
+.f-menor1 {
+    font-size   :   12px;
+}
+.phont1 {
+    font-family: 'Bradley Hand ITC';
+    src        : url("{{ asset('/fonts/BRADHITC.ttf') }}");
+    font-size: 20px;
+}
+.phont2 {
+    font-family: 'Centaur';
+    src        : url("{{ asset('/fonts/CENTAUR.ttf') }}");
+    font-size: 20px;
+}
+.pessoal1{
+    width: 35%;
+}
+
+.pessoal2{
+    width: 35%;
+}
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.div-alinhada-direita {
+    float: right;
+}
+.lateral {
+    background-image: linear-gradient(to top, #2f3a4b, #1f2937);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}

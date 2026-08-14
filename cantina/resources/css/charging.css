@@ -1,0 +1,44 @@
+/* overlay spinner quando .carregando.show estiver presente */
+.carregando{
+  display:none;
+  position:fixed;
+  inset:0;
+  align-items:center;
+  justify-content:center;
+  z-index:2000;
+}
+
+.carregando.show{
+  display:flex;
+  background: rgba(0,0,0,0.25);
+}
+
+.carregando .box{
+  background:#fff;
+  padding:20px;
+  border-radius:8px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+/* spinner simples (CSS puro) */
+.carregando .spinner{
+  width:42px;
+  height:42px;
+  display:inline-block;
+  background-image: url("/imgs/sistema/ajax.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* remove a bolinha antiga */
+  border: 0;
+  border-radius: 0;
+  animation: none;
+}
+
+@keyframes spin{
+  to { transform: rotate(360deg); }
+}
