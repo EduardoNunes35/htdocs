@@ -1,0 +1,133 @@
+==============================================================
+        RELATORIO DE VIABILIDADE TECNICA
+==============================================================
+
+Projeto:        Curriculum
+Documento:      Relatorio de Viabilidade Tecnica
+Versao:         1.0
+Data:           14/08/2026
+Status:         Em analise inicial
+
+--------------------------------------------------------------
+1. SUMARIO EXECUTIVO
+--------------------------------------------------------------
+Este relatorio tem como objetivo apresentar a analise de
+viabilidade tecnica do projeto "Curriculum", com base no
+levantamento realizado sobre o codigo-fonte e a estrutura
+atual do repositorio.
+
+Conclusao geral: o projeto e tecnicamente VIAVEL. A stack
+tecnologica escolhida e moderna, estavel e amplamente adotada
+no mercado. O projeto encontra-se em estagio inicial de
+desenvolvimento (estrutura base), sem regras de negocio
+implementadas até o momento desta analise.
+
+--------------------------------------------------------------
+2. OBJETIVO DO DOCUMENTO
+--------------------------------------------------------------
+Avaliar, sob a perspectiva tecnica, se a base tecnologica e a
+estrutura atuais do projeto sao adequadas para suportar o seu
+desenvolvimento, apontando pontos favoraveis, riscos e
+recomendacoes antes do avanco para as proximas etapas.
+
+--------------------------------------------------------------
+3. ESTADO ATUAL DO PROJETO
+--------------------------------------------------------------
+O projeto corresponde, no momento desta analise, a estrutura
+inicial padrao do framework Laravel, contendo apenas os
+componentes basicos fornecidos pela instalacao padrao:
+
+  - Model de usuario (User)
+  - Migrations padrao (usuarios, cache, jobs)
+  - Rota e tela de boas-vindas
+  - Testes de exemplo (Feature e Unit)
+
+Ainda nao ha regras de negocio, funcionalidades especificas
+ou integracoes implementadas.
+
+--------------------------------------------------------------
+4. STACK TECNOLOGICA
+--------------------------------------------------------------
+  Camada                 | Tecnologia
+  ------------------------|---------------------------------
+  Linguagem               | PHP 8.2 ou superior
+  Framework Backend       | Laravel 12
+  Gerenciador de pacotes  | Composer
+  Banco de dados          | SQLite (ambiente atual)
+  Build de frontend       | Vite 7
+  Estilizacao             | Tailwind CSS 4
+  Cliente HTTP (JS)       | Axios
+  Testes automatizados    | PHPUnit
+  Qualidade de codigo     | Laravel Pint
+  Ferramentas auxiliares  | Laravel Tinker, Sail, Pail
+
+--------------------------------------------------------------
+5. ANALISE DE VIABILIDADE
+--------------------------------------------------------------
+
+5.1 Pontos favoraveis
+
+  - Laravel 12 e uma versao recente e estavel, com suporte
+    ativo e ampla documentacao oficial.
+  - PHP 8.2+ oferece recursos modernos de linguagem, com
+    ganhos de performance e seguranca de tipos.
+  - Stack de frontend moderna (Vite + Tailwind 4), com build
+    rapido e estilizacao eficiente.
+  - Arquitetura MVC do Laravel favorece organizacao,
+    manutencao e escalabilidade conforme o projeto cresce.
+  - Ferramentas de qualidade e teste ja disponiveis no
+    projeto (PHPUnit, Pint, Mockery), permitindo boas praticas
+    desde o inicio.
+  - Uso do Eloquent ORM permite migrar o banco de dados (por
+    exemplo, de SQLite para MySQL/PostgreSQL) com baixo
+    impacto no codigo.
+
+5.2 Pontos de atencao / riscos
+
+  - Ausencia de regras de negocio e funcionalidades
+    implementadas: o projeto ainda esta em estagio inicial.
+  - Falta de documentacao de requisitos funcionais no
+    repositorio, o que impede avaliar a viabilidade de
+    funcionalidades especificas.
+  - Arquivo de configuracao de ambiente (.env) ainda nao
+    criado, apenas o modelo de exemplo (.env.example).
+  - Nao ha integracoes externas, autenticacao customizada ou
+    APIs definidas no estado atual.
+
+--------------------------------------------------------------
+6. CONCLUSAO
+--------------------------------------------------------------
+Do ponto de vista tecnico, o projeto e viavel para dar
+continuidade ao desenvolvimento. A base tecnologica escolhida
+(Laravel 12, PHP 8.2, Vite e Tailwind CSS 4) e madura, segura
+e adequada para aplicacoes web de pequeno, medio ou grande
+porte.
+
+A viabilidade de funcionalidades especificas do produto final
+dependera da definicao formal dos requisitos de negocio, que
+ainda precisam ser levantados e documentados.
+
+--------------------------------------------------------------
+7. RECOMENDACOES / PROXIMOS PASSOS
+--------------------------------------------------------------
+  1. Definir e documentar os requisitos funcionais do sistema.
+  2. Configurar o arquivo de ambiente (.env) para os cenarios
+     de desenvolvimento, homologacao e producao.
+  3. Modelar as entidades de dados necessarias e criar as
+     respectivas migrations.
+  4. Implementar rotas, controllers e telas conforme os
+     requisitos definidos.
+  5. Expandir a cobertura de testes automatizados a medida
+     que novas funcionalidades forem desenvolvidas.
+
+--------------------------------------------------------------
+
+==============================================================
+
+8. APROVACAO
+--------------------------------------------------------------
+  Responsavel tecnico: ____________________________
+
+  Data: ____ / ____ / ______
+
+  Assinatura: ____________________________
